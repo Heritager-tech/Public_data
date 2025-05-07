@@ -37,8 +37,8 @@ window.addEventListener('scroll', () => {
       const layerWidth = layerRect.width;
       const layerHeight = layerRect.height;
   
-      const maxShiftX = (layerWidth / (containerWidth / layerWidth)) \* speedX / 2;
-      const maxShiftY = (layerHeight / (containerHeight / layerHeight)) \* speedY / 2;
+      const maxShiftX = (layerWidth / (containerWidth / layerWidth)) * speedX / 2;
+      const maxShiftY = (layerHeight / (containerHeight / layerHeight)) * speedY / 2;
   
       let translateX = (scrollProgress - 0.5) * 2 * 100 * speedX;
       let translateY = (scrollProgress - 0.5) * 2 * 100 * speedY;
@@ -85,20 +85,19 @@ window.addEventListener('scroll', () => {
     });
   });
   
-  let animationPlayed = false;
+let animationPlayed = false;
   window.addEventListener('scroll', () => {
     const rightWindow = document.querySelector('.window.right');
-    const rect = rightWindow.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-  
-    if (rect.top < windowHeight && rect.bottom > 0) {
+    const rect3 = rightWindow.getBoundingClientRect();
+    const windowHeight1 = window.innerHeight;
+
+    if (rect3.top < windowHeight1 && rect3.bottom > 0) {
       if (!animationPlayed) {
         rightWindow.style.animation = 'ani 2s ease-in-out 1 forwards';
         animationPlayed = true; // больше не запускать
-      }    
-      rightWindow.classList.add('visible');
+      }
+        rightWindow.classList.add('visible');
     } else {
       rightWindow.classList.remove('visible');
-     // rightWindow.offsetWidth;
-    }
+      }
   });
