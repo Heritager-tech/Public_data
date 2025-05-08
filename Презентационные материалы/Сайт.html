@@ -5,92 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Параллакс эффект</title>
 <style>
-  
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-
- /*Высокие секции для скролла, с увеличенным расстоянием */
-.section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* по центру, чтобы окно было по центру секции */
-  margin-bottom: 580px; /* увеличенное пространство между секциями на 500px */
-  position: relative;
-}
-
-  /* Окна с прозрачным эффектом */
-  .window {
-    width: 700px; /* ширина в пикселях, округленная */
-    aspect-ratio: 1.618; /* соотношение сторон */
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    /* для позиционирования по сторонам */
-  }
-
-  /* Специальные классы для позиционирования */
-  .left {
-    align-self: flex-start;
-  }
-  .right {
-    align-self: flex-end;
-  }
-  .center {
-    /* по центру, ничего не нужно добавлять */
-  }
-
-  /* Контейнер для параллакса */
-  .parallax-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* Самое изображение для параллакса */
-  .parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 150%;
-    background-position: center;
-    background-size: cover;
-    will-change: transform;
-    transition: transform 0.2s ease-out;
-  }
+ 
 </style>
 </head>
 <body>
  
 
 
-
-<div class="background-layer"></div>
+<!--<div class="background-layer"></div>-->
 <!-- Первая секция: окно слева -->
 
   <div class="section">
+
     <div class="window left" id="special-window">
-      <div class="parallax-container">
-        <!-- Слои с изображениями для параллакса внутри окна -->
-        <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Фон%20секции.png');" data-speed-x="0" data-speed-y="0.5"></div>
-        <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности.drawio.png');" data-speed-x="0.5" data-speed-y="0.5"></div>
-        <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20составляющие.drawio.png');" data-speed-x="1.5" data-speed-y="1.5"></div>
-        <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Взаимосвязь%20в%20ландшафте.drawio.png');" data-speed-x="2.5" data-speed-y="2.5"></div>
+      
         
-      </div>
+        
+      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="0.5" data-speed-y="0.5"></div>
+      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="1.5" data-speed-y="1.5"></div>
+      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="2.5" data-speed-y="2.5"></div>
+        <div class="parallax-container">
+      
+        <!-- Слои с изображениями для параллакса внутри окна -->
+          <div class="parralax-background" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Фон%20секции.png');" data-speed-x="0" data-speed-y="1"></div>
+        </div>  
+            
+        
+        
     </div>
   </div>
 
@@ -99,7 +40,6 @@ body {
 <!-- Вторая секция: окно справа -->
  
   <div class="section">
-    <!--<div class="wow animate__slideInRight" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="50"  data-wow-iteration="0">-->
       
         <div class="window right" id="special-window">
           <div class="parallax-container">
@@ -114,26 +54,19 @@ body {
 
 <!-- Третья секция: окно по центру -->
   <div class="section">
-    <div class="window center">
+    <div class="window center" id="special-window">
       <div class="parallax-container">
-        <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="layer3" style="background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  window.addEventListener('scroll', () => {
-    document.querySelectorAll('.parallax').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const scrollPercent = 1 - rect.top / windowHeight; // 0..1
-      const maxTranslate = 50; // px
-      const translateX = (scrollPercent - 0.5) * 2 * maxTranslate; // -max..max
-      el.style.transform = `translateX(${translateX}px)`;
-    });
-  });
+
 </script>
+
+
 
 </body>
 </html>
