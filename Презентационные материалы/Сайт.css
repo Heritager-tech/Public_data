@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  //background-color: black;
+  background-color: black;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
   //background: rgb(139, 32, 32);
@@ -9,9 +9,9 @@ body {
   z-index:50;
 }
   .window {
-    width: 90%;
-    max-width: 800px;
-    aspect-ratio: 1.618;
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 1;
     background: rgba(105, 76, 76, 1);
     //backdrop-filter: blur(8px);
     border-radius: 12px;
@@ -29,11 +29,12 @@ body {
     justify-content: center;
     //margin-bottom: 80px;
     position: relative;
-    background: rgb(217, 188, 188);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 30;
-    background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Фон.png');
+    background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Фон3.png');
     background-attachment: fixed;
-    background-size: auto;
+    background-size: contain;
+    //background-size: auto;
     //background: rgba(255, 255, 255, 0);
   }
   
@@ -46,6 +47,17 @@ body {
     left: 5%;
     top: 40%;
     z-index:20;
+    clip-path: polygon(
+    22% 0%,     /* верх левый */
+    100% 0%,     /* верх правый */
+    100% 100%,  /* правый бок */
+    150% 150%,  /* низ правый */
+    36% 100%,  /* низ левый */
+    0% 37.5%     /* левый бок */
+    );
+    transform: rotate(-10deg);
+    transform-origin: center;
+    
     //transform: translateY(-50%);
   }
   
@@ -58,7 +70,7 @@ body {
   .section .window.right {
     position: absolute;
     opacity: 0;
-    transition: opacity 3s ease;
+    transition: opacity 2s ease;
     right: 5%;
     top: 50%;
 
@@ -81,30 +93,31 @@ body {
   
   /* Контейнер для параллакса */
   .parallax-container {
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     position: relative;
-    top: 7.5%;
-    //z-index:40;
-    clip-path: polygon(
-    15% 0%,     /* верх левый */
-    85% 0%,     /* верх правый */
-    100% 50%,  /* правый бок */
-    85% 100%,  /* низ правый */
-    15% 100%,  /* низ левый */
-    0% 50%     /* левый бок */
-    );
-    transform: rotate(-10deg);
-    transform-origin: center; 
-    background-color: white;
 
+    transform-origin: center; 
+
+    
+    
+    mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Пазл.svg');
+    mask-size: 90%;
+    background-color: blue;
+    mask-repeat: no-repeat;
+     -webkit-mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Пазл.svg');
+    -webkit-mask-size: 90%;
+    -webkit-mask-repeat: no-repeat;
+    
+    filter: url(#mask-border) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));;
+  
   }
 
 
   .parralax-background {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 0;
     width: 110%;
     height: 110%;
@@ -119,8 +132,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,20 +142,20 @@ body {
   }
 
   #special-window .layer:nth-child(1) {
-    left: -5%;
-    top: -15%;
+    left: 0%;
+    top: 0%;
     z-index:50;
   }
   
   #special-window .layer:nth-child(2) {
-    left: 10%;
-    top: 10%;
+    left: 5%;
+    top: 5%;
     z-index: 70;
   }
   
   #special-window .layer:nth-child(3) {
-    left: 20%;
-    top: 20%;
+    left: 10%;
+    top: 10%;
     z-index:100;
     //pointer-events: none; 
     //position: sticky;

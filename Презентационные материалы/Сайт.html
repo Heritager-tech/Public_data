@@ -21,9 +21,9 @@
       
         
         
-      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="0.5" data-speed-y="0.5"></div>
-      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="1.5" data-speed-y="1.5"></div>
-      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="2.5" data-speed-y="2.5"></div>
+      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="1.3" data-speed-y="0.2"></div>
+      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="1.8" data-speed-y="0.5"></div>
+      <div class="layer" style="background-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Ландшафт%20способности%203д.png');" data-speed-x="2.3" data-speed-y="0.9"></div>
         <div class="parallax-container">
       
         <!-- Слои с изображениями для параллакса внутри окна -->
@@ -67,6 +67,15 @@
 </script>
 
 
-
+<svg width="0" height="0" style="position: absolute;">
+  <filter id="mask-border" x="-5%" y="-5%" width="110%" height="110%">
+    <!-- Создаем контур на основе маски -->
+    <feMorphology in="SourceAlpha" result="thickened" operator="dilate" radius="5"/>
+    <feComposite in="SourceGraphic" in2="thickened" operator="out" result="outline"/>
+    <feFlood flood-color="#FFFFFF" flood-opacity="0.8" result="border-color"/>
+    <feComposite in="border-color" in2="outline" operator="in" result="colored-outline"/>
+    <feComposite in="colored-outline" in2="SourceGraphic" operator="over"/>
+  </filter>
+</svg>
 </body>
 </html>

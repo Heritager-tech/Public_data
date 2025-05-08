@@ -83,7 +83,7 @@ window.addEventListener('scroll', () => {
 
   if (rect3.top < windowHeight1 && rect3.bottom > 0) {
     if (!animationPlayed) {
-      rightWindow.style.animation = 'ani 2s ease-in-out 1 forwards';
+      rightWindow.style.animation = 'ani 1.5s ease-in-out 1 forwards';
       animationPlayed = true; // больше не запускать
     }
       rightWindow.classList.add('visible');
