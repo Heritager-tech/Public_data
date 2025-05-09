@@ -48,12 +48,12 @@ body {
     top: 40%;
     z-index:20;
     clip-path: polygon(
-    22% 0%,     /* верх левый */
+    21.5% 0%,     /* верх левый */
     100% 0%,     /* верх правый */
     100% 100%,  /* правый бок */
     150% 150%,  /* низ правый */
-    35% 100%,  /* низ левый */
-    0% 37.5%     /* левый бок */
+    35.4% 100%,  /* низ левый */
+    0% 38%     /* левый бок */
     );
     transform: rotate(-10deg);
     transform-origin: center;
@@ -88,7 +88,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  
   .svg-border-container {
         position: absolute;
         top: -4%;
@@ -97,6 +96,16 @@ body {
         height: 100%;
         pointer-events: none;
         z-index: 10;
+      }
+
+  .svg-border-container2 {
+        position: absolute;
+        top: -16.8%;
+        left: -17.5%;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 500;
       }
   
   
@@ -110,10 +119,9 @@ body {
     transform-origin: center; 
 
     
-    //mask-image:url(#my-svg);
+
     mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Пазл.svg');
     mask-size: 90%;
-    background-color: blue;
     mask-repeat: no-repeat;
      -webkit-mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Пазл.svg');
     -webkit-mask-size: 90%;
@@ -174,6 +182,12 @@ body {
   #special-window .layer:nth-child(4) {
     left: 10%;
     top: 10%;
+    z-index:140;
+    }
+  #special-window .layer:nth-child(5) {
+    left: 20%;
+    top: 20%;
+    z-index:200;
     }
   
   /* Слои для второго набора слоев */
