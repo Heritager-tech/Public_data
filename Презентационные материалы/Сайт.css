@@ -52,7 +52,7 @@ body {
     100% 0%,     /* верх правый */
     100% 100%,  /* правый бок */
     150% 150%,  /* низ правый */
-    36% 100%,  /* низ левый */
+    35% 100%,  /* низ левый */
     0% 37.5%     /* левый бок */
     );
     transform: rotate(-10deg);
@@ -89,6 +89,15 @@ body {
     transform: translate(-50%, -50%);
   }
   
+  .svg-border-container {
+        position: absolute;
+        top: -4%;
+        left: -5%;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 10;
+      }
   
   
   /* Контейнер для параллакса */
@@ -101,7 +110,7 @@ body {
     transform-origin: center; 
 
     
-    
+    //mask-image:url(#my-svg);
     mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/Презентационные%20материалы/Пазл.svg');
     mask-size: 90%;
     background-color: blue;
@@ -110,7 +119,7 @@ body {
     -webkit-mask-size: 90%;
     -webkit-mask-repeat: no-repeat;
     
-    filter: url(#mask-border) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));;
+    //filter: url(#mask-border) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));;
   
   }
 
