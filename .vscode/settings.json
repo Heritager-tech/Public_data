@@ -1,6 +1,9 @@
 {
     "folder-color.pathColors": [
-
+        {
+            "folderPath": "Public_data\\Бизнес-архитектура компании\\Бизнес-структура\\Верхний (стратегический) уровень\\Бизнес-процессы\\",
+            "color": "foldercolorizer.color_009999"
+        }
     ],
     "explorer.confirmDelete": false,
     "hediet.vscode-drawio.resizeImages": null,
