@@ -1,13 +1,13 @@
-<mxfile host="65bd71144e">
+<mxfile host="65bd71144e" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.102.3 Chrome/134.0.6998.205 Electron/35.6.0 Safari/537.36" version="28.0.7">
     <diagram id="2zi_XIBdXKynh7ebaMAH" name="Страница 1">
-        <mxGraphModel dx="1734" dy="2085" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1870" dy="2289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="37" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=3;" parent="1" vertex="1">
                     <mxGeometry x="-110" y="-120" width="2100" height="1080" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Бизнес-процесс постановка задач на разработку&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=30;horizontalStack=0;whiteSpace=wrap;fillStyle=auto;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                <mxCell id="18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Бизнес-процесс постановка задач на разработку БП-ИТ-34.1&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=30;horizontalStack=0;whiteSpace=wrap;fillStyle=auto;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="-10" y="-10" width="1940" height="790" as="geometry">
                         <mxRectangle x="100" y="560" width="60" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -21,7 +21,7 @@
                 <mxCell id="3" value="Новая задача" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="19" vertex="1">
                     <mxGeometry x="85" y="320" width="100" height="30" as="geometry"/>
                 </mxCell>
-                <object label="Определить категорию и тип задачи" hedietLinkedDataV1_path="../new.bpmn" id="6">
+                <object label="Определить категорию и тип задачи" id="6">
                     <mxCell style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;isLoopSub=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="19" vertex="1">
                         <mxGeometry x="280" y="247.50000000000023" width="120" height="80" as="geometry"/>
                     </mxCell>
@@ -148,6 +148,9 @@
                         <mxPoint x="1829.48" y="329" as="sourcePoint"/>
                         <mxPoint x="1879.48" y="341" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="&lt;b&gt;БП-ИТ-34.1.1&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="290" y="217.5" width="100" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" style="edgeStyle=none;html=1;" parent="18" source="68" target="70" edge="1">
                     <mxGeometry relative="1" as="geometry">
