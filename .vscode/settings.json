@@ -48,7 +48,7 @@
         },
         "hediet.vscode-drawio.codeLinkActivated": true,
         "hediet.vscode-drawio.local-storage": {},
-        "hediet.vscode-drawio.offline": false,
+        "hediet.vscode-drawio.offline": true,
     
     //<usergithubname>/<mysite>/master/test.html
     "files.exclude": {
