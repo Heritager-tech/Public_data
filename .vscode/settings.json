@@ -55,6 +55,13 @@
         "**.tmp.driveupload": true,
         "**LICENSE": true
         
-    }
+    },
+    "python-envs.pythonProjects": [
+        {
+            "path": "Парсер xml для drawio/xml_parse.py",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
     
 }

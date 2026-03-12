@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.101.2 Chrome/134.0.6998.205 Electron/35.5.1 Safari/537.36" version="27.1.6">
+<mxfile host="65bd71144e">
     <diagram id="NaxvBUjEVn4D0d6boA_5" name="Потоки создания ценности">
-        <mxGraphModel dx="12915" dy="2889" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="9265" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <object label="" id="1">
@@ -151,7 +151,7 @@
                 </object>
                 <object label="" placeholders="1" id="780">
                     <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.leftButton;rSize=17;perimeter=none;whiteSpace=wrap;fillColor=#1061B0;strokeColor=#DFDFDF;fontColor=#DEE2E6;resizeWidth=1;fontSize=18;part=0;backgroundOutline=0;noLabel=0;" parent="779" vertex="1">
-                        <mxGeometry width="90" height="200" relative="1" as="geometry"/>
+                        <mxGeometry width="120" height="200" relative="1" as="geometry"/>
                     </mxCell>
                 </object>
                 <object label="&lt;font style=&quot;font-size: 50px; color: rgb(255, 255, 255);&quot;&gt;Новое&lt;/font&gt;" placeholders="1" id="781">
@@ -411,7 +411,7 @@
                     <mxCell parent="0"/>
                 </object>
                 <object label="" id="9Dax179Mv4YLQOFYNyre-252">
-                    <mxCell style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="9Dax179Mv4YLQOFYNyre-251" vertex="1" visible="0">
+                    <mxCell style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="9Dax179Mv4YLQOFYNyre-251" vertex="1">
                         <mxGeometry x="-1440" y="5360" width="80" height="80" as="geometry"/>
                     </mxCell>
                 </object>
