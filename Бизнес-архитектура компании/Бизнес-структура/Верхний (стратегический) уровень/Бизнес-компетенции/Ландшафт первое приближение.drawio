@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="KPkbjoFniX4YVMLm4hhz" name="Универсальные">
-        <mxGraphModel dx="6894" dy="2855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="5824" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <object label="" New="" id="0">
                     <mxCell/>
@@ -184,7 +184,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="Основные" id="LBq4sw7w2ZfflTA5G8ZU">
-        <mxGraphModel dx="2440" dy="-1559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="5824" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <object label="" New="" id="2u0SDXx59rk51LR-6qHb-0">
                     <mxCell/>
@@ -360,7 +360,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="Управляющие" id="zlUslKcowD9_geuOn4l3">
-        <mxGraphModel dx="2440" dy="-1559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2488" dy="-1559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <object label="" New="" id="wp2hwnPlKysDd1k0PrAt-0">
                     <mxCell/>
@@ -532,6 +532,58 @@
                 <mxCell id="wp2hwnPlKysDd1k0PrAt-55" value="" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#FFFFFF;checked=1;spacing=5;fontColor=#6C767D;checkedFill=#000000;checkedStroke=#ffffff;sketch=0;strokeWidth=7;strokeColor=#CCCCCC;" parent="wp2hwnPlKysDd1k0PrAt-51" vertex="1">
                     <mxGeometry x="356.25" y="125" width="30" height="30" as="geometry"/>
                 </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="5iMrJEG252_6pXNpPhry" name="Новая парадигма">
+        <mxGraphModel dx="431" dy="-390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-1" value="&lt;span style=&quot;font-size: 50px;&quot;&gt;Управление доставкой&lt;/span&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="1910.5" y="3350" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-2" value="&lt;span style=&quot;font-size: 50px;&quot;&gt;Управление подрядчиками&lt;/span&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;strokeWidth=3;strokeColor=#3333FF;" vertex="1" parent="1">
+                    <mxGeometry x="2540" y="3340" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-3" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;Управление доставкой через подрядчиков&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;labelBackgroundColor=none;strokeWidth=3;strokeColor=#3333FF;" vertex="1" parent="1">
+                    <mxGeometry x="1910.5" y="3840" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-4" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;Управление собственной службой доставки&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="1910.5" y="3620" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-6" value="23" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;gradientColor=none;fontSize=40;" vertex="1" parent="1">
+                    <mxGeometry x="2541" y="3550" width="70" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-7" value="" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;gradientColor=none;fontSize=40;" vertex="1" parent="1">
+                    <mxGeometry x="2624" y="3550" width="70" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-8" value="" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;gradientColor=none;fontSize=40;" vertex="1" parent="1">
+                    <mxGeometry x="2710" y="3550" width="70" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-9" value="" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;gradientColor=none;fontSize=40;strokeWidth=3;strokeColor=#3333FF;" vertex="1" parent="1">
+                    <mxGeometry x="2800" y="3550" width="70" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-10" value="&lt;span style=&quot;font-size: 50px;&quot;&gt;Управление информацией&lt;/span&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="3210" y="3340" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-11" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;Управление чувствительной информацией&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="3220" y="3640" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-12" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;Управление информацией клиента&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="3210" y="4070" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-13" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;Управление информацией подрядчика&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="3620" y="4070" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="oxTDPZ5nyWpZiPtUYEHY-14" value="&lt;font style=&quot;font-size: 40px;&quot;&gt;Управление информацией подрядчика&lt;/font&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#F5DEAA;shape=mxgraph.archimate3.application;appType=capability;archiType=rounded;" vertex="1" parent="1">
+                    <mxGeometry x="3220" y="4370" width="335" height="167.5" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Управление информацией людей" c4Type="ContainerScopeBoundary" c4Application="Container" label="&lt;font&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="oxTDPZ5nyWpZiPtUYEHY-15">
+                    <mxCell style="rounded=1;fontSize=30;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=top;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
+                        <mxGeometry x="3092.5" y="3540" width="927.5" height="770" as="geometry"/>
+                    </mxCell>
+                </object>
             </root>
         </mxGraphModel>
     </diagram>

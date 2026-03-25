@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Карта доменов" id="14zsh1_X9GdR2Floc9qv">
-        <mxGraphModel dx="4682" dy="5064" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="6254" dy="6362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="DCB_4_dWbAJyJk3tY8PN-0"/>
                 <mxCell id="DCB_4_dWbAJyJk3tY8PN-1" parent="DCB_4_dWbAJyJk3tY8PN-0"/>
@@ -16,7 +16,7 @@
                 <mxCell id="rcI2DUwVNkBbtMLvxsj2-0" value="&lt;span style=&quot;font-size: 50px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Домен процесса 3&lt;/font&gt;&lt;/span&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=130;fillColor=#666666;fontColor=#FFFFFF;strokeWidth=4;swimlaneFillColor=#EDF7D2;fillOpacity=70;container=0;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="150" y="920" width="3769" height="890" as="geometry"/>
                 </mxCell>
-                <mxCell id="m0ug9tv7td75mKvzj93o-12" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 2&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 3&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#000000;strokeWidth=2;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
+                <mxCell id="m0ug9tv7td75mKvzj93o-12" value="&lt;span style=&quot;font-size: 40px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Домен 2&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 40px; color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Команда 3&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#927C9E;strokeColor=#000000;strokeWidth=2;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
                     <mxGeometry x="900" y="330" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="m0ug9tv7td75mKvzj93o-13" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
@@ -25,7 +25,7 @@
                 <mxCell id="m0ug9tv7td75mKvzj93o-15" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
                     <mxGeometry x="1760" y="603" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="m0ug9tv7td75mKvzj93o-14" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 3&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#000000;strokeWidth=2;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
+                <mxCell id="m0ug9tv7td75mKvzj93o-14" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 3&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7C0A8;strokeColor=#000000;strokeWidth=2;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
                     <mxGeometry x="1400" y="583" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="p-G37a7NlR0eZ1MjReMq-0" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="rcI2DUwVNkBbtMLvxsj2-0" vertex="1">
@@ -60,7 +60,7 @@
                 <mxCell id="m0ug9tv7td75mKvzj93o-9" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="1400" y="-80" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="m0ug9tv7td75mKvzj93o-4" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 2&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
+                <mxCell id="m0ug9tv7td75mKvzj93o-4" value="&lt;span style=&quot;font-size: 40px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Домен 2&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 40px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Команда 2&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8B6E8F;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="1050" y="570" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="m0ug9tv7td75mKvzj93o-8" value="&lt;span style=&quot;font-size: 40px;&quot;&gt;Домен 2&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 40px;&quot;&gt;Команда 1&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#000000;strokeWidth=2;arcSize=11;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
@@ -75,7 +75,7 @@
                 <mxCell id="m0ug9tv7td75mKvzj93o-7" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="1900" y="590" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="JAPjp6h5Lmx2p52DBHV0-2" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 1&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
+                <mxCell id="JAPjp6h5Lmx2p52DBHV0-2" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 1&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;&lt;b&gt;Команда 2&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4D9B9;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="2270" y="255" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="JAPjp6h5Lmx2p52DBHV0-4" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#000000;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
@@ -87,13 +87,13 @@
                 <mxCell id="m0ug9tv7td75mKvzj93o-26" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="2634" y="960" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="m0ug9tv7td75mKvzj93o-27" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 2&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 3&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
+                <mxCell id="m0ug9tv7td75mKvzj93o-27" value="&lt;span style=&quot;font-size: 40px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Домен 2&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 40px; color: rgb(63, 63, 63);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Команда 3&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#927C9E;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="2751" y="1250" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="m0ug9tv7td75mKvzj93o-28" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="3111" y="1270" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="m0ug9tv7td75mKvzj93o-29" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 3&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
+                <mxCell id="m0ug9tv7td75mKvzj93o-29" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 3&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D7C0A8;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="3265" y="1504" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="m0ug9tv7td75mKvzj93o-30" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#4D4D4D;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
@@ -111,7 +111,7 @@
                 <mxCell id="m0ug9tv7td75mKvzj93o-22" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#000000;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="3630" y="605" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="m0ug9tv7td75mKvzj93o-23" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Домен 2&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-size: 40px;&quot;&gt;Команда 2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#000000;strokeWidth=2;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
+                <mxCell id="m0ug9tv7td75mKvzj93o-23" value="&lt;span style=&quot;font-size: 40px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Домен 2&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 40px;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Команда 2&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8B6E8F;strokeColor=#000000;strokeWidth=2;fontColor=#FFFFFF;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
                     <mxGeometry x="2750" y="585" width="430" height="250" as="geometry"/>
                 </mxCell>
                 <mxCell id="m0ug9tv7td75mKvzj93o-24" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=#000000;strokeWidth=3;" parent="DCB_4_dWbAJyJk3tY8PN-1" vertex="1">
