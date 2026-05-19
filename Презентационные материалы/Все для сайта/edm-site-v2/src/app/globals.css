@@ -1,0 +1,697 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+}
+
+/* ============================================
+   EDM Consulting — Design System v2.0
+   Based on global consulting website research
+   ============================================ */
+
+/* Design Tokens */
+:root {
+  /* Primary palette — refined per research */
+  --edm-deep: #060d18;           /* McKinsey-inspired deep navy-black */
+  --edm-purple: #1a0e2e;        /* Dark purple — kept, deepened */
+  --edm-teal: #14b8a6;          /* Teal #14B8A6 — research-recommended */
+  --edm-teal-light: #2dd4bf;    /* Lighter teal for hover */
+  --edm-teal-dim: #0d9488;      /* Dimmer teal for borders */
+  --edm-amber: #d97706;         /* Warm amber secondary accent */
+  --edm-amber-light: #f59e0b;   /* Lighter amber */
+  --edm-brown: #3b2510;         /* Dark brown — kept */
+  --edm-brown-warm: #5c3a1e;    /* Warmer brown — Mocha Mousse inspired */
+  --edm-beige: #f5e6d0;         /* Beige — kept */
+  --edm-beige-light: #faf0e2;   /* Light beige */
+
+  /* Functional */
+  --edm-glass: rgba(6, 13, 24, 0.7);
+  --edm-glass-border: rgba(20, 184, 166, 0.12);
+  --edm-text-primary: rgba(255, 255, 255, 0.92);
+  --edm-text-secondary: rgba(255, 255, 255, 0.6);
+  --edm-text-muted: rgba(255, 255, 255, 0.35);
+
+  /* Spacing scale (8px base) */
+  --edm-space-xs: 0.25rem;
+  --edm-space-sm: 0.5rem;
+  --edm-space-md: 1rem;
+  --edm-space-lg: 1.5rem;
+  --edm-space-xl: 2rem;
+  --edm-space-2xl: 3rem;
+  --edm-space-3xl: 4rem;
+
+  /* Animation */
+  --edm-transition-fast: 0.2s ease;
+  --edm-transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --edm-transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--edm-deep);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion support — WCAG 2.2 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible — WCAG 2.2 compliance */
+:focus-visible {
+  outline: 2px solid var(--edm-teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   Background Effects
+   ============================================ */
+
+/* Matrix Rain Canvas — very subtle, behind everything */
+.matrix-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.04;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .matrix-canvas { display: none; }
+}
+
+/* Floating Shapes Canvas — fixed background layer from reference video */
+/* Grid + white shapes + connections — stays fixed while page scrolls */
+.floating-shapes-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-shapes-canvas { opacity: 0.4; }
+}
+
+/* Gradient sections — semi-transparent so floating shapes show through */
+.section-black { background: linear-gradient(180deg, rgba(6,13,24,0.92) 0%, rgba(26,14,46,0.92) 100%); }
+.section-purple { background: linear-gradient(180deg, rgba(26,14,46,0.92) 0%, rgba(37,22,72,0.88) 40%, rgba(10,51,51,0.88) 100%); }
+.section-teal { background: linear-gradient(180deg, rgba(10,51,51,0.88) 0%, rgba(12,64,64,0.88) 40%, rgba(59,37,16,0.92) 100%); }
+.section-brown { background: linear-gradient(180deg, rgba(59,37,16,0.92) 0%, rgba(92,58,30,0.92) 40%, rgba(245,230,208,0.95) 100%); }
+.section-beige { background: linear-gradient(180deg, rgba(245,230,208,0.95) 0%, rgba(250,240,226,0.97) 100%); }
+
+/* ============================================
+   Header — McKinsey-style glass nav
+   ============================================ */
+.header-glass {
+  background: var(--edm-glass);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--edm-glass-border);
+  transition: all var(--edm-transition-normal);
+}
+
+.header-glass.scrolled {
+  background: rgba(6, 13, 24, 0.92);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation link — refined */
+.nav-link {
+  position: relative;
+  padding: 6px 2px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color var(--edm-transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--edm-teal);
+  transition: width var(--edm-transition-normal);
+  border-radius: 1px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ============================================
+   Parallax Window — subtle 20px max (research)
+   ============================================ */
+.parallax-window {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 60px rgba(20, 184, 166, 0.08), 0 0 120px rgba(20, 184, 166, 0.04);
+}
+
+.parallax-window .puzzle-mask {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B/%D0%9F%D0%B0%D0%B7%D0%BB.svg');
+  mask-size: 90%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url('https://raw.githubusercontent.com/Heritager-tech/Public_data/main/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B/%D0%9F%D0%B0%D0%B7%D0%BB.svg');
+  -webkit-mask-size: 90%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  will-change: transform;
+  transition: opacity 0.5s ease, transform 0.3s ease-out;
+}
+
+.parallax-layer-bg {
+  z-index: 2;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+}
+
+.parallax-layer-fg {
+  z-index: 10;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+}
+
+/* SVG Border overlays — refined with teal accent */
+.svg-border-1 {
+  position: absolute;
+  top: 0%;
+  left: -1%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.svg-border-2 {
+  position: absolute;
+  top: -16.8%;
+  left: -17.5%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* ============================================
+   Flow Lines — from logo
+   ============================================ */
+.flow-line {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(20, 184, 166, 0.7) 0%, rgba(20, 184, 166, 0) 100%);
+  transform-origin: top center;
+}
+
+.flow-line::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--edm-teal);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(20, 184, 166, 0.6);
+  animation: flowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes flowPulse {
+  0%, 100% { opacity: 0.3; transform: translateX(-50%) scale(0.5); box-shadow: 0 0 6px rgba(20, 184, 166, 0.3); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.3); box-shadow: 0 0 18px rgba(20, 184, 166, 0.8); }
+}
+
+/* ============================================
+   Scroll Reveal — refined (research: subtle)
+   ============================================ */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal for children */
+.reveal-stagger > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger > *:nth-child(4) { transition-delay: 240ms; }
+.reveal-stagger > *:nth-child(5) { transition-delay: 320ms; }
+
+/* ============================================
+   Switch Buttons — refined
+   ============================================ */
+.switch-btn {
+  padding: 10px 22px;
+  border: 1.5px solid rgba(20, 184, 166, 0.35);
+  background: rgba(20, 184, 166, 0.06);
+  color: var(--edm-teal);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all var(--edm-transition-normal);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.switch-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(20, 184, 166, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--edm-transition-normal);
+}
+
+.switch-btn:hover::before {
+  opacity: 1;
+}
+
+.switch-btn:hover {
+  border-color: var(--edm-teal);
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.15);
+  transform: translateY(-1px);
+}
+
+.switch-btn.active {
+  background: rgba(20, 184, 166, 0.18);
+  border-color: var(--edm-teal-light);
+  color: #fff;
+  box-shadow: 0 0 24px rgba(20, 184, 166, 0.2), inset 0 0 12px rgba(20, 184, 166, 0.08);
+}
+
+.switch-btn:active {
+  transform: scale(0.95);
+}
+
+/* ============================================
+   Contact Form — refined
+   ============================================ */
+.contact-input {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid rgba(20, 184, 166, 0.2);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: var(--edm-text-primary);
+  font-size: 15px;
+  transition: all var(--edm-transition-normal);
+  width: 100%;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: var(--edm-teal);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1), 0 0 20px rgba(20, 184, 166, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-input::placeholder {
+  color: var(--edm-text-muted);
+}
+
+/* ============================================
+   Glass Card — refined
+   ============================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px) saturate(150%);
+  border-radius: 20px;
+  transition: all var(--edm-transition-normal);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(20, 184, 166, 0.25);
+  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.08), 0 0 0 1px rgba(20, 184, 166, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   Floating Elements — decoration
+   ============================================ */
+.floating-element {
+  position: absolute;
+  border: 1px solid rgba(20, 184, 166, 0.08);
+  border-radius: 6px;
+  animation: floatElement 8s ease-in-out infinite;
+  pointer-events: none;
+  background: rgba(20, 184, 166, 0.02);
+}
+
+@keyframes floatElement {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(3deg); }
+  66% { transform: translateY(-6px) rotate(-2deg); }
+}
+
+/* ============================================
+   Tab Switcher — refined
+   ============================================ */
+.tab-switcher {
+  display: inline-flex;
+  gap: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid rgba(20, 184, 166, 0.2);
+  background: rgba(6, 13, 24, 0.6);
+  backdrop-filter: blur(12px);
+}
+
+.tab-btn {
+  padding: 14px 28px;
+  background: transparent;
+  color: var(--edm-text-secondary);
+  border: none;
+  cursor: pointer;
+  transition: all var(--edm-transition-normal);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+.tab-btn:hover {
+  background: rgba(20, 184, 166, 0.08);
+  color: var(--edm-text-primary);
+}
+
+.tab-btn.active {
+  background: rgba(20, 184, 166, 0.15);
+  color: var(--edm-teal-light);
+  font-weight: 600;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: var(--edm-teal);
+  border-radius: 1px;
+}
+
+/* ============================================
+   Gradient Text — research-inspired
+   ============================================ */
+.gradient-text {
+  background: linear-gradient(135deg, var(--edm-teal) 0%, var(--edm-teal-light) 40%, var(--edm-amber) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   CTA Button — McKinsey-style
+   ============================================ */
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: var(--edm-teal);
+  color: var(--edm-deep);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--edm-transition-normal);
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.25);
+}
+
+.cta-primary:hover {
+  background: var(--edm-teal-light);
+  box-shadow: 0 8px 30px rgba(20, 184, 166, 0.35);
+  transform: translateY(-2px);
+}
+
+.cta-primary:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 2px 10px rgba(20, 184, 166, 0.25);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--edm-teal);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(20, 184, 166, 0.4);
+  cursor: pointer;
+  transition: all var(--edm-transition-normal);
+  letter-spacing: 0.02em;
+}
+
+.cta-secondary:hover {
+  background: rgba(20, 184, 166, 0.08);
+  border-color: var(--edm-teal);
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.1);
+}
+
+.cta-secondary:active {
+  transform: scale(0.97);
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--edm-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 184, 166, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 184, 166, 0.4);
+}
+
+/* ============================================
+   Page Transition
+   ============================================ */
+.page-fade-in {
+  animation: pageFadeIn 0.4s ease-out;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   EA Layer Navigator (Interactive Page)
+   ============================================ */
+.ea-layer {
+  position: relative;
+  padding: 20px 24px;
+  border-left: 3px solid rgba(20, 184, 166, 0.2);
+  transition: all var(--edm-transition-normal);
+  cursor: pointer;
+}
+
+.ea-layer:hover {
+  border-left-color: var(--edm-teal);
+  background: rgba(20, 184, 166, 0.04);
+}
+
+.ea-layer.active {
+  border-left-color: var(--edm-teal);
+  background: rgba(20, 184, 166, 0.08);
+}
+
+.ea-layer.active::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 11px;
+  background: var(--edm-teal);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(20, 184, 166, 0.5);
+}
+
+/* ============================================
+   Stat Counter (Social Proof)
+   ============================================ */
+.stat-item {
+  text-align: center;
+  padding: 24px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--edm-teal) 0%, var(--edm-teal-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   Mobile Menu — slide-in
+   ============================================ */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--edm-transition-normal);
+}
+
+.mobile-menu-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  background: rgba(6, 13, 24, 0.97);
+  backdrop-filter: blur(24px);
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform var(--edm-transition-slow);
+  border-left: 1px solid var(--edm-glass-border);
+  padding: 80px 24px 24px;
+}
+
+.mobile-menu-panel.open {
+  transform: translateX(0);
+}
